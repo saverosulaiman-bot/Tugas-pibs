@@ -3,65 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil - Sulaiman Savero</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .card {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-        }
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        h1 {
-            font-size: 22px;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .bio {
-            text-align: left;
-            font-size: 14px;
-            color: #444;
-            line-height: 1.6;
-        }
-    </style>
+    <title>Portofolio - Sulaiman Savero</title>
+    <!-- Menghubungkan ke file CSS terpisah -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <img src="https://via.placeholder.com/120" alt="Foto Profil" class="avatar">
-        <h1>Sulaiman Savero</h1>
-        <p class="subtitle">Mahasiswa - PIBS 2024</p>
-        
-        <div class="bio">
-            <p><strong>Nama:</strong> Sulaiman Savero</p>
-            <p><strong>Tugas:</strong> Tugas 1 - Membuat Profil</p>
-            <p><strong>Deskripsi:</strong> Halaman profil dibuat menggunakan HTML & CSS native.</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Savero.dev</div>
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Tugas & Proyek</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-text">
+            <span class="badge">Mahasiswa Information Systems</span>
+            <h1>Halo, Saya <br><span style="color: #38bdf8;">Sulaiman Savero</span></h1>
+            <p>Fokus pada Quality Assurance, Web Development Native, dan Sistem Informasi. Suka mempelajari teknologi baru serta pengembangan perangkat lunak.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/saverosulaiman-bot" target="_blank" class="btn-primary">Lihat GitHub</a>
+                <a href="#projects" class="btn-secondary">Lihat Tugas</a>
+            </div>
         </div>
-    </div>
+        <div class="hero-img-container">
+            <img src="foto-profil.jpeg" alt="Sulaiman Savero" class="hero-img">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Keahlian & Teknologi</h2>
+        <p class="section-subtitle">Teknologi dan tools yang saya gunakan dalam pengembangan software.</p>
+        <div class="skills-wrapper">
+            <div class="skill-badge">HTML5 & CSS3 Native</div>
+            <div class="skill-badge">JavaScript</div>
+            <div class="skill-badge">Git & GitHub</div>
+            <div class="skill-badge">Quality Assurance / Software Testing</div>
+            <div class="skill-badge">Postman (API Testing)</div>
+            <div class="skill-badge">Python & SQL</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Tugas & Proyek</h2>
+        <p class="section-subtitle">Beberapa aktivitas dan tugas akademik yang dikerjakan.</p>
+        <div class="grid-cards">
+            <div class="card">
+                <h3>Tugas - PIBS 2026</h3>
+                <p>Membuat web profil pribadi menggunakan HTML & CSS native tanpa framework, dikembangkan melalui kolaborasi Git/GitHub.</p>
+            </div>
+            <div class="card">
+                <h3>Software Quality Assurance</h3>
+                <p>Pengujian fungsionalitas aplikasi, pembuatan test case, bug reporting, dan eksplorasi pengujian manual/otomatis.</p>
+            </div>
+            <div class="card">
+                <h3>Sistem Informasi & Data</h3>
+                <p>Analisis proses bisnis, pengelolaan query database SQL, dan pengolahan data berbasis pemrograman script.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Sulaiman Savero. Dibuat untuk Tugas Pengolahan Informasi Berbasis Pemrograman Script.</p>
+    </footer>
 
 </body>
 </html>
